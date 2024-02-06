@@ -1,5 +1,5 @@
 /* Reset default margin and padding */
-body, h1 {
+body, h1, p {
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,23 @@ body, h1 {
 /* Set background color to black */
 body {
     background-color: black;
+}
+
+/* Cool menu styles */
+.cool-menu {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px; /* Add padding for better readability */
+    text-align: center; /* Center align text */
+}
+
+/* Style the menu links */
+.cool-menu a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding around links */
+    margin: 0 10px; /* Add margin between links */
+    border-radius: 5px; /* Add rounded corners to links */
 }
 
 /* Style the title */
@@ -19,6 +36,7 @@ h1 {
         -1px -1px 0 #00FF00, /* Green shadow */
         1px -1px 0 #0000FF, /* Blue shadow */
         -1px 1px 0 #FFFF00; /* Yellow shadow */
+    font-family: Tahoma, sans-serif; /* Set font family to Tahoma */
 }
 
 /* Add border style to create a dotted effect */
@@ -41,4 +59,19 @@ p {
     text-shadow: 
         1px 1px 0 #FF00FF, /* Magenta shadow */
         -1px -1px 0 #00FFFF; /* Cyan shadow */
+    font-family: Tahoma, sans-serif; /* Set font family to Tahoma */
+}
+
+/* Cool dots background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: radial-gradient(white 3%, transparent 0);
+    background-size: 20px 20px;
+    z-index: -1;
 }
