@@ -1,75 +1,94 @@
-/* Reset default margin and padding */
 body, h1, p {
     margin: 0;
     padding: 0;
 }
 
-/* Set background color to black */
 body {
     background-color: black;
 }
 
-/* Cool menu styles */
-.cool-menu {
-    padding: 10px; /* Add padding for better readability */
-    text-align: center; /* Center align text */
-}
-
-/* Style the menu links */
-.cool-menu a {
-    color: white; /* Set link color to white */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px 20px; /* Add padding around links */
-    margin: 0 10px; /* Add margin between links */
-    border-radius: 5px; /* Add rounded corners to links */
-    text-shadow: 
-        1px 1px 0 #FF00FF, /* Magenta shadow */
-        -1px -1px 0 #00FFFF; /* Cyan shadow */
-    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
-}
-
-/* Hover effect for menu links */
-.cool-menu a:hover {
-    color: cyan; /* Change link color on hover */
-}
-
-/* Style the title */
 h1 {
-    font-size: 3em; /* Adjust the font size as needed */
-    color: white; /* Set the color of the text to white */
-    text-align: center; /* Center the text */
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    padding: 10px;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
     text-shadow: 
-        1px 1px 0 #FF0000, /* Red shadow */
-        -1px -1px 0 #00FF00, /* Green shadow */
-        1px -1px 0 #0000FF, /* Blue shadow */
-        -1px 1px 0 #FFFF00; /* Yellow shadow */
-    font-family: Tahoma, sans-serif; /* Set font family to Tahoma */
+        1px 1px 0 #FF00FF,
+        -1px -1px 0 #00FFFF;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Add border style to create a dotted effect */
+.menu a:hover {
+    color: cyan;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 
+        1px 1px 0 #FF0000,
+        -1px -1px 0 #00FF00,
+        1px -1px 0 #0000FF,
+        -1px 1px 0 #FFFF00;
+    font-family: Tahoma, sans-serif;
+}
+
+h1::before,
 h1::after {
-    content: '.';
-    animation: dots 1s infinite linear;
-    font-size: 2em;
+    content: '{ ';
+    animation: dots 5s infinite linear;
+    animation-delay: 2s; /* Add this line to delay the animation start */
+    font-size: 1em;
 }
 
-/* Animation for the dots */
+h1::after {
+    content: ' }';
+}
+
 @keyframes dots {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
     50% {
-        color: transparent;
+        color: green;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: red;
     }
 }
 
-/* Style other text on the page */
 p {
-    color: white; /* Set the color of the text to white */
+    color: white;
     text-shadow: 
-        1px 1px 0 #FF00FF, /* Magenta shadow */
-        -1px -1px 0 #00FFFF; /* Cyan shadow */
-    font-family: Tahoma, sans-serif; /* Set font family to Tahoma */
+        1px 1px 0 #FF00FF,
+        -1px -1px 0 #00FFFF;
+    font-family: Tahoma, sans-serif;
 }
-
-/* Cool dots background */
 body::before {
     content: "";
     position: fixed;
