@@ -11,8 +11,6 @@ body {
 
 /* Cool menu styles */
 .cool-menu {
-    background-color: #333; /* Dark background color */
-    color: white; /* Text color */
     padding: 10px; /* Add padding for better readability */
     text-align: center; /* Center align text */
 }
@@ -24,6 +22,15 @@ body {
     padding: 10px 20px; /* Add padding around links */
     margin: 0 10px; /* Add margin between links */
     border-radius: 5px; /* Add rounded corners to links */
+    text-shadow: 
+        1px 1px 0 #FF00FF, /* Magenta shadow */
+        -1px -1px 0 #00FFFF; /* Cyan shadow */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+/* Hover effect for menu links */
+.cool-menu a:hover {
+    color: cyan; /* Change link color on hover */
 }
 
 /* Style the title */
@@ -75,3 +82,4 @@ body::before {
     background-size: 20px 20px;
     z-index: -1;
 }
+ 
