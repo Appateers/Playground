@@ -1,0 +1,56 @@
+body {
+    background-image: url('lava-lamp-background.jpg');
+    background-size: cover;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #fff;
+  }
+  
+  h1, h2, h3 {
+    text-shadow: 2px 2px 0px #6600cc;
+  }
+  
+  p {
+    color: #cc99ff;
+  }
+  
+  .header {
+    background-color: #0033cc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .nav-menu {
+    background-color: #330066;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .nav-menu a {
+    color: #cc66ff;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {
+    background-color: #6600cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #330066;
+    cursor: pointer;
+  }
