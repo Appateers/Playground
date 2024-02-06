@@ -1,55 +1,50 @@
 body {
-    background-image: url('../img/indexbackground.png');
+    background-image: url('../img/forest.png');
     background-size: cover;
-    font-family: 'IBM Plex Mono', monospace;
+    color: #fff;
+    font-family: 'Script Font', cursive;
   }
   
   h1, h2, h3 {
-    text-shadow: 2px 2px 0px #6600cc;
+    text-shadow: 2px 2px 0 #000;  
   }
   
   p {
-    color: #cc99ff;
+    text-shadow: 1px 1px 0 #000;
   }
   
-  .header {
-    background-color: #0033cc;
-    text-align: center;
-    padding: 20px;
+  .menu {
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid #000;
     border-radius: 10px;
-  }
-  
-  .nav-menu {
-    background-color: #330066;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .nav-menu li {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  
-  .nav-menu a {
-    color: #cc66ff;
-    text-decoration: none;
-  }
-  
-  .main-content {
-    max-width: 800px;
-    margin: 0 auto;
+    box-shadow: 3px 3px 0 #000;
     padding: 20px;
   }
   
-  button {
-    background-color: #6600cc;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
+  .menu a {
+    text-decoration: none;
+    color: #000;
+    text-shadow: none;
   }
   
-  button:hover {
-    background-color: #330066;
-    cursor: pointer;
+  .textbox {
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #000;
+    padding: 20px;  
   }
+  
+  .textbox p {
+    text-shadow: none;
+  }
+  
+  .smoke {
+    animation: swirl 2s infinite;
+  }
+  
+  @keyframes swirl {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(20px) rotate(360deg); }
+  }
+  
