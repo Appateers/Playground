@@ -15,10 +15,10 @@ h1 {
     color: white; /* Set the color of the text to white */
     text-align: center; /* Center the text */
     text-shadow: 
-        3px 3px 0 #FF0000, /* Red shadow */
-        -3px -3px 0 #00FF00, /* Green shadow */
-        3px -3px 0 #0000FF, /* Blue shadow */
-        -3px 3px 0 #FFFF00; /* Yellow shadow */
+        1px 1px 0 #FF0000, /* Red shadow */
+        -1px -1px 0 #00FF00, /* Green shadow */
+        1px -1px 0 #0000FF, /* Blue shadow */
+        -1px 1px 0 #FFFF00; /* Yellow shadow */
 }
 
 /* Add border style to create a dotted effect */
@@ -39,8 +39,6 @@ h1::after {
 p {
     color: white; /* Set the color of the text to white */
     text-shadow: 
-        2px 2px 0 #FF00FF, /* Magenta shadow */
-        -2px -2px 0 #00FFFF; /* Cyan shadow */
+        1px 1px 0 #FF00FF, /* Magenta shadow */
+        -1px -1px 0 #00FFFF; /* Cyan shadow */
 }
-
-  
