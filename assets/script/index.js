@@ -1,24 +1,21 @@
-// Get the body element 
+// Get the body element
 const body = document.querySelector('body');
 
-// Initialize some variables for the mouse position
-let mouseX = 0;
-let mouseY = 0;
+// Create stars and append them to the body
+for (let i = 0; i < 50; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    body.appendChild(star);
+}
 
-// Update the mouse position on mousemove
-body.addEventListener('mousemove', e => {
-  mouseX = e.clientX; 
-  mouseY = e.clientY;
-  
-  // Update the background position
-  body.style.backgroundPositionX = -mouseX + 'px';
-  body.style.backgroundPositionY = -mouseY + 'px';
-});
+// Move stars around the page
+setInterval(() => {
+    const stars = document.querySelectorAll('.star');
 
-// Morph the background on mousemove
-body.addEventListener('mousemove', e => {
-  const x = e.clientX / window.innerWidth;
-  const y = e.clientY / window.innerHeight;
-  
-  body.style.backgroundSize = x * 100 + 'px ' + y * 100 + 'px';
-});
+    stars.forEach(star => {
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+
+        star.style.transform = `translate(${x}px, ${y}px)`;
+    });
+}, 1000); // Change the interval as needed
